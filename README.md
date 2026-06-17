@@ -1,59 +1,252 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+## 🙏 Acknowledgements
+
+This project was created by following the **Laravel 11, Midtrans, Filament, Service Repository: Web Online Course** course from **BuildWithAngga (BWA)** for educational purposes. All credit for the original learning materials goes to BuildWithAngga.
+
+# 🎓 Learning Management System (LMS)
+
+A modern Learning Management System built with **Laravel 12**, designed to simplify online learning through course management, student enrollment, and progress tracking.
+
+<p>
+    <img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
+    <img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+    <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
 </p>
 
-## About Laravel
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Learning Management System (LMS) is a web-based platform that enables instructors to create and manage online courses while allowing students to enroll, access learning materials, complete lessons, and monitor their learning progress.
 
-## Learning Laravel
+The application is developed using **Laravel 12**, following MVC architecture and best practices to ensure scalability, maintainability, and security.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# ✨ Features
 
-## Laravel Sponsors
+### 👨‍🎓 Student
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Register & Login
+- Browse available courses
+- Enroll in courses
+- Watch learning videos
+- Read learning materials
+- Track learning progress
+- View completed courses
 
-### Premium Partners
+### 👨‍🏫 Mentor
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Create new courses
+- Manage course content
+- Upload videos & materials
+- Organize lessons
+- Manage enrolled students
 
-## Contributing
+### 👑 Administrator
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Dashboard Analytics
+- User Management
+- Course Management
+- Category Management
+- Enrollment Management
+- Role & Permission Management
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# 🛠️ Tech Stack
 
-## Security Vulnerabilities
+| Technology         | Description          |
+| ------------------ | -------------------- |
+| Laravel 12         | Backend Framework    |
+| PHP 8.3            | Programming Language |
+| MySQL              | Database             |
+| Bootstrap 5        | Frontend Framework   |
+| Blade              | Templating Engine    |
+| Eloquent ORM       | Database ORM         |
+| Laravel Migration  | Database Versioning  |
+| Laravel Seeder     | Sample Data          |
+| Laravel Validation | Form Validation      |
+| Git & GitHub       | Version Control      |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+# 📂 Project Structure
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+```
+
+---
+
+# ⚙️ Installation
+
+Clone repository
+
+```bash
+git clone https://github.com/yourusername/lms-laravel.git
+```
+
+Masuk ke folder project
+
+```bash
+cd lms-laravel
+```
+
+Install dependency
+
+```bash
+composer install
+```
+
+Copy environment
+
+```bash
+cp .env.example .env
+```
+
+Generate application key
+
+```bash
+php artisan key:generate
+```
+
+Setup database pada file `.env`
+
+```env
+DB_DATABASE=obitowalms
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Jalankan migration dan seeder
+
+```bash
+php artisan migrate --seed
+```
+
+Buat symbolic link storage
+
+```bash
+php artisan storage:link
+```
+
+Jalankan server
+
+```bash
+php artisan serve
+```
+
+Akses
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# 📊 Database
+
+Main entities:
+
+- Users
+- Courses
+- Categories
+- Lessons
+- Course Benefits
+- Course Requirements
+- Enrollments
+- Progress
+- Certificates
+
+---
+
+# 🔐 Authentication
+
+- Login
+- Register
+- Remember Me
+- Email Verification _(Optional)_
+- Password Reset _(Optional)_
+- Role Based Access Control
+
+---
+
+# 📌 Future Improvements
+
+- Quiz & Examination
+- Assignment Submission
+- Discussion Forum
+- Certificate Generator
+- Live Class Integration
+- Payment Gateway
+- Notifications
+- Mobile Responsive Improvements
+- REST API
+- Multi-language Support
+
+---
+
+# 📷 Screenshots
+
+```
+ss-wrj/
+└── image/
+    ├── landing.png
+    ├── dashboard.png
+    ├── courses.png
+    ├── course-detail.png
+    ├── learning.png
+    ├── profile.png
+    ├── admin.png
+    └── enrollment.png
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push branch
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open Pull Request
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, don't forget to leave a star!
+
+Made with ❤️ using Laravel 12
+
+</div>
