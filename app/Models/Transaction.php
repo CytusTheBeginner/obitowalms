@@ -21,12 +21,12 @@ class Transaction extends Model
         'payment_type',
         'proof',
         'started_at',
-        'ended_at,'
+        'ended_at'
     ];
 
     protected $casts = [
-        'started_at' => 'date',
-        'ended_at' => 'date',
+        'started_at' => 'datetime',
+        'ended_at' => 'datetime',
     ];
 
     public function student(): BelongsTo
@@ -37,5 +37,10 @@ class Transaction extends Model
     public function pricing(): BelongsTo
     {
         return $this->belongsto(Pricing::class, 'pricing_id');
+    }
+
+    public function isActive(): bool
+    {
+        return $this->is_paid && $this->ended_at->isFuture();
     }
 }

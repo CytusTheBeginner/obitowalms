@@ -50,4 +50,12 @@ class Course extends Model
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    // menghitung total seluruh konten yang ada di dalam sebuah course (custom function)
+    public function getContentCountAttribute()
+    {
+        return $this->courseSection->sum(function ($section) {
+            return $section->sectionContents->count();
+        });
+    }
 }

@@ -54,4 +54,22 @@ class User extends Authenticatable
     {
         return $this->hasmany(Transaction::class, 'user_id');
     }
+
+    // method untuk mendapatkan semua data transaksi dari user
+    public function getActiveSubscription()
+    {
+        return $this->transactions()
+            ->where('is_paid', true)
+            ->where('ended_at', '>=', now())
+            ->first();
+    }
+
+    // method untuk mendapatkan subscription yang aktif
+    public function hasActiveSubscription()
+    {
+        return $this->transactions()
+            ->where('is_paid', true)
+            ->where('ended_at', '>=', now())
+            ->exists();
+    }
 }
