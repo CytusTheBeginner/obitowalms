@@ -17,9 +17,10 @@ class CategoriesTable
     {
         return $table
             ->columns([
-                TextColumn::make('slug')
+                TextColumn::make('slug')  
                     ->searchable(),
                 TextColumn::make('name')
+                    ->sortable() 
                     ->searchable(),
                 TextColumn::make('deleted_at')
                     ->dateTime()
