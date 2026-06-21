@@ -3,7 +3,6 @@
 namespace App\Filament\Resources\Pricings\Schemas;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Fieldset;
 use Filament\Schemas\Schema;
 
 class PricingForm
